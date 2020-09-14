@@ -1,0 +1,171 @@
+*{
+    margin:0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+}
+ul{
+    margin:0;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 400;
+}
+.navbar{
+    font-family: 'Verdana', Georgia, monospace;
+    background: #353535;
+}
+.navbar a{
+    color: white;
+    padding: 0.8rem;
+    font-size: 1.5rem;
+}
+.navbar li{
+    border-right: 1px solid rgba(255,255,255,.1);
+}
+
+.Logo{
+    margin: 15px 0px;
+    text-align: center;
+}
+.sidebar{
+	text-decoration: none;
+	position: fixed;
+	left: 0;
+	width: 230px;
+	height: 100%;
+    background: #353535;
+    transition: left 1s;
+}
+.sidebar header{
+	text-decoration: none;
+	font-size: 1rem;
+	color: white;
+	text-align: center;
+	line-height: 1rem;
+    background: #242424;
+    padding: 10px 0;
+    
+}
+.sidebar header p{
+    font-size: 16px;
+    text-align: start;
+    padding-left: 10px;
+}
+.sidebar ul a{
+	text-decoration: none;
+	display: block;
+	height: 100%;
+	width: 100%;
+	line-height: 6rem;
+	font-size: 1.2rem;
+	color: white;
+	padding-left: 1.2rem;
+	box-sizing: border-box;
+	border-top: 1px solid rgba(255,255,255,.1);
+    border-bottom: 1px solid black;
+    transition: .3s;
+}
+.sidebar .links li:hover a{
+    padding-left: 30px;
+}
+.content{
+    font-family: 'Segoe UI', Courier, monospace;
+    font-size: 1.3rem;
+    margin-left: 250px;
+    padding: 300px 300px 0 200px;
+}
+.content a{
+    color:white;
+}
+.content li{
+    margin-right: 50px;
+    margin-bottom: 60px;
+    background: #353535;
+    border-radius: 10px;
+    box-shadow: 1px 3px #acacac;
+    width: auto;
+}
+.Profile{
+    padding-bottom: 80px;
+}
+.nav-item{
+    max-width: 260px;
+    
+}
+.nav-item a{
+    backface-visibility: hidden;
+    transition: .2s;
+    align-content: center;
+    text-align: center;
+    
+}
+.links .nav-item a:hover{
+    transform: scale(1.05);
+    /* font-size: 110%; */
+}
+.content-box{
+    padding-top: 50px;
+    padding-bottom: 150px;
+}
+.content p,h3{
+    margin-top: 20px;
+}
+header hr{
+    color:white;
+}
+.work-experience h5{
+    margin-top: 20px;
+}
+.linkedIn i{
+    color: #62c0ec;
+}
+.gamedev i{
+    color: #ec7262;
+}
+.burger{
+    background: #353535;
+    color: white;
+    padding: 10px;
+    padding-left: 30px;
+    font-size: 50px;
+    position: absolute;
+    right: -10%;
+    top:0;
+    transform:rotate(90deg);
+}
+.burger:hover{
+    cursor: pointer;
+}
+.hide{
+    left: -75%;
+}
+@media screen and (max-width: 1370px){
+    .content{
+        padding: 300px 100px 0 50px;
+    }
+}
+@media screen and (max-width: 910px){
+    .burger{
+        right: 0%;
+    }
+    .sidebar{
+        left: -100%;
+        width: 100%;
+    }
+    .hide{
+        left: 0;
+    }
+    .nav-item {
+        max-width: 100%;
+        
+    }
+    .content{
+        margin: 0;
+    }
+    .content li{
+        width: 100%;
+        padding: 15px 5px;
+    }
+}
